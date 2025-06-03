@@ -11,13 +11,110 @@
 
 /* Design notes:
 Colors;
-    black: 
-    orange: 
-    red: 
-    white:  
+    black: rgba(5, 1, 4, 1)
+    white: rgba(255, 255, 255, 1)
+    orangey-red: 
+    grey: rgba(70, 70, 70, 0.3)
     
 Font;
     Title: Inknut Antiqua 64px
-    nav: Inkut Antiqua 40px
+    nav: Inknut Antiqua 32px
     headline: Inkut Antiqua 80px
-    paragraphs: Inria Sans 40px*/
+    paragraphs: Inria Sans 40px
+    "shortcut" paragraphs: Inknut Antiqua 24px
+    Small titles: DM Mono 32px light 
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100svw;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Inknut Antiqua", serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(5, 1, 4, 1);
+  padding: 0 50px;
+}
+
+#title_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  font-size: 44px;
+}
+
+#title_container img {
+  border-radius: 50%;
+  border: solid rgba(255, 255, 255, 1) 2px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+nav a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+nav a:hover {
+  color: rgba(193, 68, 14, 1);
+}
+
+main {
+  width: 100svw;
+  height: 100svh;
+  background-color: rgba(5, 1, 4, 1);
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro_section {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 50px;
+}
+
+#intro_article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#intro_article h2 {
+  font-family: "Inknut Antiqua", serif;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#intro_article p {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#intro_img img {
+  border-radius: 50%;
+}
