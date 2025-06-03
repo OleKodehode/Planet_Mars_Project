@@ -7,6 +7,14 @@
             p .article_headline
         article #intro_img
             p
+    section #shortcut_section
+        article
+            img p
+    section #overview
+        article .text_box
+            p .small_headline .article_headline .subtitle svg
+        article .media_box
+            iframe
     
 */
 
@@ -25,10 +33,17 @@ Font;
     "shortcut" paragraphs: Inknut Antiqua 12px
     Small titles: DM Mono 32px light 
 */
+/* css reset */
 * {
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  /* Make the scrolling smooth instead of instant */
+  scroll-behavior: smooth;
+}
+
 header {
   width: 100svw;
   height: 130px;
@@ -155,8 +170,18 @@ section {
 }
 
 .subtitle {
+  font-family: "Inria Sans", sans-serif;
   font-style: italic;
   margin-top: 50px;
+}
+
+.subtitle_box {
+  display: flex;
+  flex-direction: row;
+}
+
+svg {
+  align-self: flex-end;
 }
 
 .text_box {
