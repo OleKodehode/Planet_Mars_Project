@@ -1,6 +1,14 @@
 /* HTML Structure:
+    header
+        h2 nav 
+            a
+    section #intro_section
+        article #intro_article
+            h2 p
+        article #intro_img
     
- */
+*/
+
 /* Design notes:
 Colors;
     black: 
@@ -10,6 +18,6 @@ Colors;
     
 Font;
     Title: Inknut Antiqua 64px
-    nav: Inkut Antiqua 32px
+    nav: Inkut Antiqua 40px
     headline: Inkut Antiqua 80px
-    paragraphs: Inria Sans */
+    paragraphs: Inria Sans 40px*/
