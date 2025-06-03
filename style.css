@@ -1,20 +1,25 @@
 /* HTML Structure:
     header
-        h2 nav 
-            a
+        article #title_container
+            h1 img
+        nav
+            a #overview #exploration #gallery
+
     section #intro_section
         article #intro_article
             p .article_headline
         article #intro_img
-            p
+            img
+
     section #shortcut_section
         article
             img p
+
     section #overview
         article .text_box
             p .small_headline .article_headline .subtitle svg
         article .media_box
-            iframe
+            iframe (youtube video)
     
 */
 
@@ -26,13 +31,14 @@ Colors;
     grey: rgba(70, 70, 70, 0.3)
     
 Font;
-    Title: Inknut Antiqua 44px
+    title: Inknut Antiqua 44px
     nav: Inknut Antiqua default size
     headline: Inkut Antiqua 40px
     paragraphs: Inria Sans 20px
-    "shortcut" paragraphs: Inknut Antiqua 12px
-    Small titles: DM Mono 32px light 
+    "shortcut" paragraphs: Inria Sans 14px
+    small titles: DM Mono 14px font-weight: 300 
 */
+
 /* css reset */
 * {
   margin: 0;
@@ -91,7 +97,7 @@ nav a:hover {
 }
 
 main {
-  width: 100svw;
+  min-width: 100svw;
   background-color: rgba(5, 1, 4, 1);
   color: rgba(255, 255, 255, 1);
   display: flex;
@@ -116,6 +122,7 @@ section {
   align-items: center;
   padding: 0 75px;
   gap: 50px;
+  min-height: 75svh;
 }
 
 #intro_article {
@@ -131,7 +138,7 @@ section {
 }
 
 #shortcut_section {
-  height: 300px;
+  min-height: 300px;
   width: 100svw;
   padding: 10px 75px;
   background-color: rgba(70, 70, 70, 0.3);
@@ -158,7 +165,6 @@ section {
   font-family: "Inknut Antiqua", serif;
   font-style: normal;
   font-size: 44px;
-  font-weight: 400;
 }
 
 .small_headline {
@@ -185,9 +191,9 @@ svg {
 }
 
 .text_box {
-  width: 50%;
+  width: 40%;
 }
 
 .media_box {
-  width: 50%;
+  width: 60%;
 }
