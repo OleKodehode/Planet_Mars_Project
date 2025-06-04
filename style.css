@@ -71,7 +71,6 @@ header {
   flex-direction: row;
   align-items: center;
   gap: 30px;
-  font-size: 44px;
 }
 
 #title_container img {
@@ -83,6 +82,8 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 50px;
+  padding-right: 40px;
+  font-size: 18px;
 }
 
 nav a,
@@ -132,16 +133,16 @@ section {
   text-align: center;
   line-height: 1.5;
 }
-
 #intro_img img {
   border-radius: 50%;
+  width: 400px;
 }
 
 #shortcut_section {
   min-height: 300px;
   width: 100svw;
   padding: 10px 75px;
-  background-color: rgba(70, 70, 70, 0.3);
+  background-color: #33323266;
 }
 
 #shortcut_section img {
@@ -157,10 +158,16 @@ section {
   gap: 10px;
 }
 
-#shortcut_section p {
-  font-size: 14px;
+#shortcut_section a {
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Inria Sans", sans-serif;
+  letter-spacing: 0.4px;
+  cursor: pointer;
 }
-
+#shortcut_section a:hover {
+  background-color: rgba(118, 118, 119, 0.149);
+}
 .article_headline {
   font-family: "Inknut Antiqua", serif;
   font-style: normal;
@@ -190,6 +197,10 @@ svg {
   align-self: flex-end;
 }
 
+#overview {
+  background-color: #46464642;
+  width: 100svw;
+}
 .text_box {
   width: 40%;
 }
