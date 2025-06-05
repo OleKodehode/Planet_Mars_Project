@@ -168,7 +168,7 @@ section {
   width: 200px;
 }
 #shortcut_section a:hover {
-  background-color: rgba(118, 118, 119, 0.149);
+  background-color: rgba(141, 141, 147, 0.167);
 }
 .article_headline {
   font-family: "Inknut Antiqua", serif;
@@ -179,7 +179,7 @@ section {
 .small_headline {
   font-family: "DM Mono", monospace;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 17px;
   color: rgba(186, 186, 196, 1);
 }
 
@@ -195,8 +195,12 @@ section {
   display: flex;
   flex-direction: row;
 }
+.subtitle_box a:hover {
+  background-color: rgba(141, 141, 147, 0.167);
+}
 
 svg {
+  display: flex;
   align-self: flex-end;
 }
 
@@ -205,11 +209,16 @@ svg {
   width: 100vw;
 }
 .text_box {
-  width: 40%;
-  padding-left: 10%;
+  width: 50%;
+  padding-right: 10%;
 }
-
 .media_box {
   width: 60%;
   padding-right: 5%;
+}
+#exploration {
+  width: 100vw;
+}
+.media_box img {
+  width: 90%;
 }
