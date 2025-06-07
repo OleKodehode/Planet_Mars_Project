@@ -221,5 +221,9 @@ svg {
   width: 100vw;
 }
 .media_box img {
-  width: 90%;
+  width: 80%;
+}
+
+#gallery {
+  width: 100vw;
 }
