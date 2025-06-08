@@ -20,24 +20,68 @@
             p .small_headline .article_headline .subtitle svg
         article .media_box
             iframe (youtube video)
-    
+
+   section #exploration
+    div .text_box
+     p.small_headline
+     p.article_headline
+     p
+    div .subtitle_box
+      a.subtitle
+    div .media_box
+      img
+
+  section #gallery
+    div .text_box
+      p.small_headline
+      p.article_headline
+      p
+    div .subtitle_box
+      a.subtitle
+    div .media_box
+      img
+
+  footer
+   div .footer_container
+   div .social_media
+      a > i.fa-brands (Instagram, Facebook, X, YouTube)
+   div .footer_nav
+      ul
+        li > a 
+        li > a 
+        li > a 
+        li > a 
+        li > a 
+        li > a 
+
 */
 
 /* Design notes:
-Colors;
-    black: rgba(5, 1, 4, 1)
-    white: rgba(255, 255, 255, 1)
-    orangey-red: rgba(193, 68, 14, 1)
-    grey: rgba(70, 70, 70, 0.3)
-    
-Font;
-    title: Inknut Antiqua 44px
-    nav: Inknut Antiqua default size
-    headline: Inkut Antiqua 40px
-    paragraphs: Inria Sans 20px
-    "shortcut" paragraphs: Inria Sans 17px
-    small titles: DM Mono 14px font-weight: 300 
-*/
+  Colors:
+  color-black: rgba(5, 1, 4, 1);
+  color-white: rgba(255, 255, 255, 1);
+  color-orangey-red: rgba(193, 68, 14, 1);
+  color-grey-dark: rgba(70, 70, 70, 0.3);
+  color-grey-light: rgba(141, 141, 147, 0.167);
+ 
+  Font Families 
+  font-serif: 'Inknut Antiqua', serif;
+  font-sans: 'Inria Sans', sans-serif;
+  font-mono: 'DM Mono', monospace;
+
+  Font Sizes 
+  font-title: 22px;                
+  font-nav: 18px;                  
+  font-headline: 44px;            
+  font-paragraph: 20px;          
+  font-shortcut: 17px;            
+  font-footer: 20px;              
+
+  Font weight:
+  weight-normal: 400;
+  weight-light: 300;
+  weight-bold: 700;
+  */
 
 /* css reset */
 * {
